@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #2F3542;
+  color: #ffffff;
+}
+
+.contact__center, .contact, .work__center, .work, .about, .hero__center, .hero, .navBar__home, .navBar__center, .navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar {
+  background-color: #F8F8F8;
+  padding-block: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navBar__center {
+  justify-content: space-between;
+  width: 1000px;
+}
+.navBar__home {
+  width: 400px;
+  margin-right: 100px;
+  justify-content: space-between;
+}
+.navBar__home a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.navBar__logo {
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 50px;
+}
+.hero__center {
+  width: 1000px;
+  gap: 200px;
+}
+.hero__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero__intro--role {
+  font-size: 35px;
+  font-weight: 700;
+}
+.hero__intro--name {
+  font-size: 17px;
+}
+.hero__intro span {
+  color: #B1B1B1;
+  font-size: 30px;
+  font-weight: 700;
+}
+.hero__photo img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid rgb(186, 182, 182);
+}
+
+.about {
+  margin-top: 30px;
+}
+.about__inner {
+  width: 1000px;
+}
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.about p {
+  margin-bottom: 10px;
+}
+.about ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 25px;
+}
+
+.work {
+  margin-top: 50px;
+}
+.work__center {
+  flex-direction: column;
+  width: 1000px;
+}
+.work__center h2 {
+  width: 100%;
+  padding-left: 20px;
+}
+.work__grid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+.work__item {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  background-color: #57606f;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  transition: 0.5s ease 0s;
+}
+.work__item img {
+  border-radius: 10px;
+}
+.work__item--info {
+  margin-top: 50px;
+}
+.work__item--info small {
+  color: #e2dfdf;
+}
+.work__item--info h4 {
+  font-size: 20px;
+}
+.work__item--info a {
+  color: white;
+}
+.work__item:hover {
+  transform: translateY(-10px);
+  transition: 0.2s ease 0s;
+}
+
+.contact {
+  margin-top: 50px;
+}
+.contact__center {
+  width: 1000px;
+  flex-direction: column;
+}
+.contact__center h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  width: 100%;
+  padding-left: 20px;
+}
+.contact__center ul {
+  width: 100%;
+  padding: 20px;
+}
+.contact__center li {
+  display: flex;
+  gap: 10px;
+}
+.contact__center a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

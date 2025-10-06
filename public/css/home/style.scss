@@ -1,0 +1,350 @@
+// Biến màu
+$text-main: #ffffff;
+$text-dark: #000000;
+$text-medium: #333333;
+$text-light: #555555;
+$text-muted: #d8d2d2;
+$text-hero: #ffffff;
+$text-subhero: #b1b1b1;
+
+$bg-body: #2f3542;
+$bg-light: #f8f8f8;
+$bg-lighter: #f9f9f9;
+$bg-section: #f5f5f5;
+$bg-card: #fafafa;
+
+// Reset & Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: $bg-body;
+  color: $text-main;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $bg-light;
+
+  .navbar {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #F8F8F8;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    a {
+      color: $text-medium;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &.active {
+        color: $text-dark;
+      }
+    }
+  }
+}
+
+
+// Hero Section
+#home {
+  width: 900px;
+  overflow: hidden;
+}
+
+.hero{
+  position: relative;
+  height: 700px;
+  width: 100%;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+    &__content {
+        position: relative;
+        text-align: center;
+        color: $text-hero;
+
+        & h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        & p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            color: $text-subhero;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+
+        img {
+            object-fit: cover;
+            display: block;
+            border-radius: 20%;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+        & button{
+            background-color: transparent;
+            border: none;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+                
+        #Duong,
+        #Hau,
+        #Vinh {
+        position: relative;
+        border-radius: 50%;
+        //   opacity: 10%;
+        }
+
+        #Duong {
+        top: 290px;
+        left: 60px;
+        height: 230px;
+        width: 200px;
+        }
+
+        #Hau {
+        top: 200px;
+        left: 130px;
+        height: 250px;
+        width: 200px;
+
+        &:hover{
+            cursor: pointer;
+        }
+        }
+
+        #Vinh {
+        top: 230px;
+        left: 240px;
+        height: 230px;
+        width: 200px;
+        }
+    }
+}
+
+
+
+// Scroll Indicator
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-dot {
+  width: 10px;
+  height: 10px;
+  background-color: $text-main;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+// Sections
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-header {
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: $text-main;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $text-muted;
+  }
+}
+
+// Stats Grid
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  background-color: $bg-section;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 150px;
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: $text-medium;
+  }
+
+  .value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $text-dark;
+  }
+
+  .label {
+    font-size: 0.9rem;
+    color: $text-light;
+  }
+}
+
+// Sponsors Grid
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sponsor {
+  background-color: $bg-lighter;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: $text-medium;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ddd;
+
+  &:hover {
+    background-color: $bg-section;
+  }
+}
+
+// Contact Grid
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background-color: $bg-card;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  border: 1px solid #ddd;
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: $text-main;
+  }
+
+  .label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: $text-dark;
+  }
+
+  .value {
+    color: $text-light;
+  }
+}
+
+// Footer
+.footer {
+  background-color: $bg-light;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: $text-light;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+
+  a {
+    color: $text-light;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $text-dark;
+    }
+  }
+}
