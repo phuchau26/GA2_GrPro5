@@ -284,6 +284,7 @@ body {
 .sponsors-grid {
   display: flex;
   flex-wrap: wrap; 
+  width: 1000px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
