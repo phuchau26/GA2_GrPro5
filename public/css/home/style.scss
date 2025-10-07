@@ -338,10 +338,11 @@ body {
 
 // Sponsors Grid
 .sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  display: flex;
+  width: 350px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tool{
@@ -360,10 +361,19 @@ body {
   color: $text-medium;
   transition: background-color 0.3s ease;
   border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100px;
+  text-align: center;
+  transition: 0.3s ease 0s;
 
   &:hover {
-    background-color: $bg-section;
+    transform: translateY(-4px);
   }
+}
+
+#tech{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 // Contact Grid
