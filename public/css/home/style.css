@@ -282,6 +282,7 @@ body {
 }
 
 .sponsors-grid {
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
