@@ -285,6 +285,7 @@ body {
   display: flex;
   flex-wrap: wrap; 
   align-content: space-between;
+  background-color: aqua;
   width: 1000px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.5rem;
