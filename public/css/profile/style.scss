@@ -20,7 +20,7 @@ body {
 .navBar{
     @extend %center;
     background-color: #F8F8F8;
-    padding-block: 20px;
+    padding-block: 10px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -49,6 +49,11 @@ body {
     &__logo{
         color: black;
         font-weight: bold;
+
+        & img{
+            height: 40px;
+            width: 40px;
+        }
     }
     
 }
