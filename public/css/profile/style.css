@@ -49,6 +49,21 @@ body {
 .hero {
   margin-top: 50px;
 }
+.hero__back {
+  background-color: #2F3542;
+  border-radius: 20%;
+  border: 2px solid #444b5a;
+  transition: 0.5s ease 0s;
+}
+.hero__back img {
+  height: 26px;
+  object-fit: cover;
+  background-color: transparent;
+}
+.hero__back:hover {
+  background-color: white;
+  cursor: pointer;
+}
 .hero__center {
   width: 1000px;
   gap: 200px;

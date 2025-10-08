@@ -332,6 +332,7 @@ body {
   width: 250px;
   border: 1px solid #ddd;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 .contact-card .icon {
   font-size: 2rem;
@@ -349,7 +350,7 @@ body {
 
 .footer {
   background-color: #f8f8f8;
-  padding: 2rem;
+  padding-block: 20px;
   text-align: center;
   font-size: 0.9rem;
   color: #555555;
